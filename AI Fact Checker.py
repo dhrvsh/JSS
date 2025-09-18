@@ -19,11 +19,11 @@ title.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
 info = customtkinter.CTkEntry(app, placeholder_text="Enter claim here.", width=350, height=32, font=(font, 13))
 info.place(relx=0.5, rely=0.28, anchor=customtkinter.CENTER)
 
-TF = customtkinter.CTkTextbox(app, width=350, height=64, font=(font, 15))
+TF = customtkinter.CTkTextbox(app, wrap=customtkinter.WORD, width=350, height=64, font=(font, 15))
 TF.place(relx=0.5, rely=0.455, anchor=customtkinter.N)
 TF.configure(state="disabled")
 
-src = customtkinter.CTkTextbox(app, width=350, height=64, font=(font, 15))
+src = customtkinter.CTkTextbox(app, wrap=customtkinter.WORD, width=350, height=64, font=(font, 15))
 src.place(relx=0.5, rely=0.95, anchor=customtkinter.S)
 src.configure(state="disabled")
 
