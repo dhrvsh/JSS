@@ -219,9 +219,7 @@ def pageOneCanon():
                                 if data["Marks"][i] != "N":
                                     prompt = prompt+subjList[i]+str(markList[i])+"%\n"
                         prompt = prompt+"\n"+about+"\nPlease suggest 10 suitable jobs for me. I require no other information, just a plain list of jobs, each in a seperate line, nothing else. The list must not be numbered, nor bullet pointed. It must be simple text, in a simple list, only 10 jobs."
-                        print(prompt)
                         response = model.generate_content(prompt)
-                        print(response.text)
 
                         jobsTxt = response.text
                         jobsList = jobsTxt.split("\n") 
