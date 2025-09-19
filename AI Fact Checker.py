@@ -12,6 +12,7 @@ app = customtkinter.CTk()
 app.geometry("400x350")
 app.title("AI Fact Checker")
 app.resizable(False, False)
+app.iconbitmap("icons/factchecker.ico")
 
 title = customtkinter.CTkLabel(app, text="AI Fact Checker", fg_color="transparent", font=(font, 40))
 title.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)

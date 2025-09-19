@@ -1,4 +1,5 @@
 import customtkinter
+import tkinter
 from tkinter import messagebox
 import google.generativeai as genai
 
@@ -16,6 +17,7 @@ welcome = customtkinter.CTk()
 welcome.geometry("480x270")
 welcome.title("Career Compass")
 welcome.resizable(False, False)
+welcome.iconbitmap("icons/careercompass.ico")
 
 presents = customtkinter.CTkLabel(welcome, text="Project Castor Presents", fg_color="transparent", font=(font, 20))
 presents.place(relx=0.5, rely=0.3, anchor=customtkinter.CENTER)
@@ -29,6 +31,7 @@ def pageOneCanon():
     personalitySelect.geometry("500x400")
     personalitySelect.title("Career Compass: About Yourself")
     personalitySelect.resizable(False, False)
+    personalitySelect.iconbitmap("icons/careercompass.ico")
 
     title = customtkinter.CTkLabel(personalitySelect, text="Career Compass", fg_color="transparent", font=(font, 40))
     title.place(relx=0.5, rely=0.135, anchor=customtkinter.CENTER)
@@ -46,6 +49,7 @@ def pageOneCanon():
         subjSelect.geometry("400x410")
         subjSelect.resizable(False, False)
         subjSelect.title("Career Compass: Interest Selector")
+        subjSelect.iconbitmap("icons/careercompass.ico")
 
         subjs = ['Accounting', 'Acting', 'Agribusiness', 'Algebra', 'Anatomy & Physiology', 'Animation', 'Anthropology', 'Archaeology', 'Art History', 'Artificial Intelligence', 'Astronomy & Astrophysics', 'Automotive Technology', 'Aviation Mechanics', 'Biochemistry', 'Biology', 'Biomedical Science', 'Blockchain Technology', 'Botany', 'Business Ethics', 'Business Law', 'Business Management', 'Calculus', 'Carpentry', 'Ceramics', 'Chemistry', 'Civics', 'Classical Languages (e.g., Latin, Greek)', 'Climate Science', 'Cloud Computing', 'Combinatorics', 'Comparative Literature', 'Computational Thinking', 'Computer Graphics', 'Computer Networks', 'Construction Technology', 'Cosmetology', 'Costume Design', 'Creative Writing', 'Criminology', 'Culinary Arts', 'Cultural Studies', 'Cybersecurity', 'Data Science', 'Data Structures & Algorithms', 'Databases', 'Demography', 'Differential Equations', 'Digital Forensics', 'Digital Media Arts', 'Discrete Mathematics', 'Drama & Playwriting', 'Drawing & Illustration', 'Drone Operation & Maintenance', 'E-Commerce', 'Earth Science', 'Ecology & Environmental Science', 'Economics', 'Economics for Business', 'Editing & Publishing', 'Electrical & Electronics Technology', 'Embedded Systems', 'English Literature', 'Entrepreneurship', 'Essay Writing & Composition', 'Fashion Design', 'Fiction Writing', 'Film Studies', 'Finance', 'Financial Mathematics', 'Forensic Science', 'Forestry', 'Game Theory', 'Gender Studies', 'Genetics', 'Geology', 'Geometry', 'Graphic Design', 'HVAC (Heating, Ventilation, Air Conditioning)', 'History (General)', 'Hospitality & Tourism Management', 'Human Geography', 'Human Resource Management', 'Human-Computer Interaction', 'Interior Design', 'International Business', 'International Relations', 'Investment & Portfolio Management', 'Journalism', 'Linguistics', 'Literary Theory', 'Machine Learning', 'Marine Technology', 'Marketing', 'Materials Science', 'Mathematics', 'Mechatronics', 'Meteorology', 'Microbiology', 'Mobile App Development', 'Molecular Biology', 'Music Composition', 'Music Theory', 'Neuroscience', 'Number Theory', 'Nutrition Science', 'Oceanography', 'Operating Systems', 'Operations Research', 'Organic Chemistry', 'Painting', 'Peace & Conflict Studies', 'Pharmacology', 'Phonetics & Phonology', 'Photography', 'Physics', 'Plumbing', 'Poetry & Poetics', 'Political Science', 'Probability & Statistics', 'Programming', 'Project Management', 'Psychology', 'Public Policy', 'Rhetoric', 'Robotics', 'Science', 'Screenwriting', 'Sculpture', 'Second Language Acquisition', 'Semantics & Pragmatics', 'Social Work', 'Sociology', 'Software Engineering', 'Sound Design', 'Stage Design', 'Supply Chain Management', 'Technical Writing', 'Theater Arts', 'Thermodynamics', 'Topology', 'Translation & Interpretation', 'Trigonometry', 'Urban Studies', 'Voice & Diction', 'Web Development', 'Welding', 'World History', 'World Literature', 'Zoology']
 
@@ -91,6 +95,7 @@ def pageOneCanon():
             markSheet.geometry("400x410")
             markSheet.resizable(False, False)
             markSheet.title("Career Compass: Marks Entry")
+            markSheet.iconbitmap("icons/careercompass.ico")
 
             title = customtkinter.CTkLabel(markSheet, text="Career Compass", fg_color="transparent", font=(font, 30))
             title.place(relx=0.51, rely=0.11775, anchor=customtkinter.CENTER)
@@ -225,6 +230,7 @@ def pageOneCanon():
                         job.geometry("390x760")
                         job.title("Career Compass")
                         job.resizable(False, False)
+                        job.iconbitmap("icons/careercompass.ico")
 
                         title = customtkinter.CTkLabel(job, text="Career Compass", fg_color="transparent", font=(font, 40))
                         title.place(relx=0.5, rely=0.075, anchor=customtkinter.CENTER)
@@ -245,7 +251,7 @@ def pageOneCanon():
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
-                            response = model.generate_content("Give me a short description for the job title: "+jobsList[0]+"\nNO FORMATTING, JUST PLAIN TEXT. JUST A PLAIN EXPLAINATION, NO INTRODUCTION. TRY TO GIVE IN POINTS.").text
+                            response = model.generate_content("Give me a short description for the job title: "+jobsList[0]+"\nNO FORMATTING, JUST PLAIN TEXT. JUST A PLAIN EXPLAINATION, NO INTRODUCTION. GIVE IN POINTS, WHICH ARE EACH IN A SEPERATE LINE.").text
 
                             jobsplainbox.configure(state="normal")
                             jobsplainbox.insert("0.0", "Job Title: "+jobsList[0]+"\n\n"+response)
