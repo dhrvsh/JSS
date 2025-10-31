@@ -237,18 +237,18 @@ def pageOneCanon():
 
                         def explain0():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
-                            response = model.generate_content("Give me a short description for the job title: "+jobsList[0]+"\nNO FORMATTING, JUST PLAIN TEXT. JUST A PLAIN EXPLAINATION, NO INTRODUCTION. GIVE IN POINTS, WHICH ARE EACH IN A SEPERATE LINE.").text
+                            response = model.generate_content("Give me a short description for the job title: "+jobsList[0]+"\nNO FORMATTING, JUST PLAIN TEXT. JUST A PLAIN EXPLAINATION, NO INTRODUCTION. GIVE IN POINTS, WHICH ARE EACH IN A SEPERATE LINE, no need for any bullet point of any sorts.").text
 
                             jobsplainbox.configure(state="normal")
                             jobsplainbox.insert("0.0", "Job Title: "+jobsList[0]+"\n\n"+response)
@@ -257,14 +257,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain1():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")                            
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -277,14 +277,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain2():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -297,14 +297,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain3():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -317,14 +317,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain4():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -337,14 +337,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain5():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -357,14 +357,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain6():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -377,14 +377,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain7():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -397,14 +397,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain8():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
@@ -417,14 +417,14 @@ def pageOneCanon():
                             jobsplain.mainloop()
                         def explain9():
                             jobsplain = customtkinter.CTk()
-                            jobsplain.geometry("400x350")
+                            jobsplain.geometry("450x300")
                             jobsplain.title(jobsList[0])
                             jobsplain.resizable(False, False)
                             
                             jobTitle = customtkinter.CTkLabel(jobsplain, text="Job Information", fg_color="transparent", font=(font, 40))
                             jobTitle.place(relx=0.5, rely=0.14, anchor=customtkinter.CENTER)
                             
-                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=375, height=230, font=(font, 15))
+                            jobsplainbox = customtkinter.CTkTextbox(wrap=customtkinter.WORD, master=jobsplain, width=425, height=200, font=(font, 15))
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
