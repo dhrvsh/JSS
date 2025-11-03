@@ -248,7 +248,7 @@ def pageOneCanon():
                             jobsplainbox.place(relx=0.5, rely=0.25, anchor=customtkinter.N)
                             jobsplainbox.configure(state="disabled")
 
-                            response = model.generate_content("Give me a short description for the job title: "+jobsList[0]+"\nNO FORMATTING, JUST PLAIN TEXT. JUST A PLAIN EXPLAINATION, NO INTRODUCTION. GIVE IN POINTS, WHICH ARE EACH IN A SEPERATE LINE, no need for any bullet point of any sorts.").text
+                            response = model.generate_content("Give me a short description for the job title: "+jobsList[0]+"\nNO FORMATTING, JUST PLAIN TEXT. JUST A PLAIN EXPLAINATION, NO INTRODUCTION. GIVE IN POINTS, WHICH ARE EACH IN A SEPERATE LINE, no need for any bullet point of any sorts. After leaving two lines, make a simple flowchart in points, numbering it using X) where X is the serial number. Make the language used simple").text
 
                             jobsplainbox.configure(state="normal")
                             jobsplainbox.insert("0.0", "Job Title: "+jobsList[0]+"\n\n"+response)
